@@ -1,0 +1,8 @@
+{
+    "name": "acte-technology/acte_data_report_sdk",
+    "description": "Connect to ACTE Technology data reporting API",
+    "type": "library",
+    "require": {
+        "php": ">=7.2.0"
+    }
+}
