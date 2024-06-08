@@ -1,8 +1,46 @@
 {
-    "name": "acte-technology/acte_data_report_sdk",
+    "name": "acte/data-report-sdk",
     "description": "Connect to ACTE Technology data reporting API",
     "type": "library",
     "require": {
         "php": ">=7.2.0"
+    },
+    "keywords": [
+      "acte",
+      "iot",
+      "telemetry",
+      "data"
+    ],
+    "authors": [
+        {
+          "name": "ACTE Technology",
+          "email": "contact@acte.ltd",
+          "homepage": "https://acte.ltd",
+          "role": "Maintainer"
+        }, {
+          "name": "Pascal PHAM",
+          "homepage": "https://github.com/akpascalp",
+          "email": "pham.anhkhoapascal@gmail.com",
+          "role": "Developer"
+        }, {
+          "name": "Adrien BALTARDIVE",
+          "email": "adrien@baltardive.com",
+          "role": "Developer"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "ReportSdk\\": "src/ReportSdk/"
+      },
+      "files": [
+        "src/ReportSdk/Connector.php"
+      ]
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "ReportSdk\\ConnectorServiceProvider"
+        ]
+      }
     }
 }
