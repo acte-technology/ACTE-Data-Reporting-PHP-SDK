@@ -13,16 +13,16 @@
 ## Example
 ```php
 <?php
-require_once 'acte_data_report_sdk.php';
+use ReportSdk\Connector;
 
 // Configuration variables
-$base_url = "YOUR_URL";
+$base_url = "https://example.com";
 $username = "YOUR_USERNAME";
 $password = "YOUR_PASSWORD";
 $db = "DATA_DB"; # database
 
 // init api class and connect
-$api = new ReportApi($base_url);
+$api = new Connector($base_url);
 $api->connect($username, $password);
 
 // Check if the connection is successful
@@ -51,9 +51,11 @@ $key = $keys[0];
 date_default_timezone_set('UTC'); // Set the timezone to UTC
 $to_ts = strtotime(date("Y-m-d", time()));
 $from_ts = strtotime(date("Y-m-d", strtotime("-7 days")));
-$agg_type = "SUM"; // aggregation method: AVG | MIN | MAX | SUM
-$agg_interval = 3600; // aggregation interval in seconds
 
-$data = $api->getTelemetry($db, $device, $key, $from_ts, $to_ts, $agg_interval, $agg_type);
+// TO DO:::
+// $agg_type = "SUM"; // aggregation method: AVG | MIN | MAX | SUM
+// $agg_interval = 3600; // aggregation interval in seconds
+
+$data = $api->getTelemetry($db, $device, $key, $from_ts, $to_ts);
 print_r($data);
 ```
