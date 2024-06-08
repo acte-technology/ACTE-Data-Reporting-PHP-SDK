@@ -3,7 +3,11 @@
 - Collect your data via ACTE Technology secured gateway
 
 ## Installation
-...
+
+Install with composer:
+```bash
+composer require acte/data-report-sdk
+```
 
 # Configuration
 
