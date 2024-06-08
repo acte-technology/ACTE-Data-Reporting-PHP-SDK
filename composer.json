@@ -2,6 +2,7 @@
     "name": "acte/data-report-sdk",
     "description": "Connect to ACTE Technology data reporting API",
     "type": "library",
+    "license": "GPL-3.0-or-later",
     "require": {
         "php": ">=7.2.0"
     },
