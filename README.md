@@ -16,10 +16,10 @@
 require_once 'acte_data_report_sdk.php';
 
 // Configuration variables
-$base_url = "YOUR_URL"
+$base_url = "YOUR_URL";
 $username = "YOUR_USERNAME";
 $password = "YOUR_PASSWORD";
-$db = "DATA_DB" # database
+$db = "DATA_DB"; # database
 
 // init api class and connect
 $api = new ReportApi($base_url);

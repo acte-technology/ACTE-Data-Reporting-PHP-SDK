@@ -1,6 +1,8 @@
 <?php
 
-class ReportApi
+namespace ReportSdk;
+
+class Connector
 {
     private $base_url;
     private $token;
